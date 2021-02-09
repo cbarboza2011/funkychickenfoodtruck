@@ -170,7 +170,7 @@ p, form > div > label, textarea, .information, .form-group button {
 }
 
 .popup {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -178,7 +178,7 @@ p, form > div > label, textarea, .information, .form-group button {
 }
 
 .pop {
-  margin-left: 100vw;
+  /* margin-left: 100vw; */
 }
 
 .windows > div {
