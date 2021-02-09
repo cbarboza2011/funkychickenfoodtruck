@@ -177,7 +177,7 @@ p, form > div > label, textarea, .information, .form-group button {
   background: #fcee21;
 }
 
-.pop {
+.popup, .pop {
   /* margin-left: 100vw; */
 }
 
@@ -213,6 +213,12 @@ p, form > div > label, textarea, .information, .form-group button {
   padding: 4vw 4vw 3vw;;
   border-radius: 10vw;
 }
+
+/* SLIDER */
+.slider.ui-slider {
+  width: 100%;
+}
+
 /* FOOTER */
 footer {
   padding: 2vh;

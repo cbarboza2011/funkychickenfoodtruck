@@ -136,7 +136,7 @@ maximum-scale=1.0, user-scalable=no" />
 												<input type="text" name="zip" class="form-control" placeholder="#####">
 											</div>
 											<div class="form-group">
-												<button class="btn btn-raised btn-block btn-danger">Continue →</button>
+												<button class="btn btn-raised btn-block btn-danger" type='button'>Continue →</button>
 											</div>
 										</form>
 									</div>
@@ -162,19 +162,33 @@ maximum-scale=1.0, user-scalable=no" />
 
 				<!-- LOAN -->
 				<div class="loan pop" id="loan">
-					<div class="#">
+					<div class="flex-center flex-column loan-setter">
 						<p>Amount to loan: $<span class="loanamount"></span></p>
 						<div class="slider"></div>
+						<button type="button" class="submitloan">Continue →</button>
 					</div>
 					<!-- PayPal Widget -->
-					<div id="smart-button-container">
+
+					<a href="https://www.paypal.com/donate?hosted_button_id=LR2YL2LXSYSTQ" class="paypalbutton"><img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" alt="Buy Now" /></a>
+
+
+
+					<!-- <form action="https://www.paypal.com/donate" method="post" target="_top"  class="paypalbutton">
+						<input type="hidden" name="hosted_button_id" value="LR2YL2LXSYSTQ" />
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+						<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+					</form> -->
+
+
+
+					<!-- <div id="smart-button-container">
 						<div style="text-align: center;">
 							<div id="paypal-button-container">
 								<div class="USD">Loan $<span class="dollaramount"></span></div>
 							</div>
 						</div>
 					</div>
-					<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+					<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script> -->
 					<!-- End PayPal Widget -->
 				</div>
 			</div>
