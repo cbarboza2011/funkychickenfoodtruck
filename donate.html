@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0,
+maximum-scale=1.0, user-scalable=no" />
+	<title>The Funky Chicken</title>
+	<!-- TITLE ICON -->
+	<link rel="shortcut icon" href="images/circle-right.svg" />
+	<!-- LINK PREVIEW IMAGE -->
+	<meta property="og:image" content="images/square-raster.png" />
+	<!-- RESET -->
+	<link rel="stylesheet" href="vendor/css/reset.css">
+	<!-- BOX-SIZING RESET -->
+	<link rel="stylesheet" href="vendor/css/box-sizing.css">
+	<!-- LINK STYLESHEET -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="vendor\jquery-ui\jquery-ui-1.12.1.custom\jquery-ui.structure.css">
+	<link rel="stylesheet" href="vendor\jquery-ui\jquery-ui-1.12.1.custom\jquery-ui.theme.css">
+	<!-- LINK JQUERY -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- LINK SCRIPT -->
+	<script src="scripts/index.js"></script>
+	<!-- LINK FONTS -->
+		<!-- fonts go here -->
+		<link rel="stylesheet" href="https://use.typekit.net/stx2rzn.css">
+	<!-- SOCIAL MEDIA ICON LIBRARY -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="flex-center flex-column">
+
+	<!-- "BACK TO TOP" DESTINATION -->
+	<a name="top"></a>
+
+	<!-- BANNER -->
+	<div class="banner">
+		<!-- MOBILE BANNER -->
+		<img src="images/circle-horizontal.svg" alt="The Funky Chicken Food Truck" id="circle-horizontal">
+		<!-- LANDSCAPE/TABLET/DESKTOP BANNER -->
+		<img src="images/circle-banner.svg" alt="The Funky Chicken Food Truck" id="circle-banner">
+	</div>
+
+	<!-- UNDER CONSTRUCTION -->
+	<div class="construction">
+		WEBSITE UNDER CONSTRUCTION
+	</div>
+
+	<!-- NAVIGATION -->
+	<div class="nav-container">
+		<div class="navcontrol">☰ Navigate</div>
+		<div class="navigation flex-column">
+			<div class="nav-links flex-column">
+				<div class="links flex-column">
+					<div class="pagination flex-column">
+						<a class="nav-link" href="index.html">Main</a>
+						<a class="nav-link" href="menu.html">Menu</a>
+						<a class="nav-link" href="gallery.html">Gallery</a>
+						<a class="nav-link" href="about.html">Our Story</a>
+            <a class="nav-link" href="donate.html">Fundraising</a>
+					</div>
+					<div class="social">
+						<a href="#" class="fa fa-facebook" target="_blank"></a>
+						<a href="#" class="fa fa-instagram" target="_blank"></a>
+					</div>
+				</div>
+				<a class="nav-link email" href="mailto:thefunkychickenfoodtruck@gmail.com">Email Us</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- BLURB -->
+	<div class="blurb flex-center flex-column">
+		<!-- TRUCK IMAGE -->
+		<div class="truck">
+			<h1>Want to Help<br>the Funky Chicken Fly?</h1>
+			<img src="images/truck-img-placeholder.svg" alt="">
+		</div>
+
+		<!-- DONATE/LOAN BUTTONS -->
+		<div class="finance flex">
+			<div class="finance-button" id="donatebutton">
+				Donate
+				<p>as a gift</p>
+	    </div>
+			<div class="finance-button" id="loanbutton">
+				Invest
+				<p>for a 10% return</p>
+	    </div>
+		</div>
+		<div class="popup">
+			<div class="windows">
+				<!-- FORM -->
+				<div class="information pop">
+					<div class="flex-center">All fields marked with a * are required.</div>
+					<!-- Form Started -->
+					<div class="container form-top">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+								<div class="panel panel-danger">
+									<div class="panel-body">
+										<form id="reused_form">
+											<div class="form-group">
+												<label><i class="fa fa-user" aria-hidden="true"></i> First Name *</label>
+												<input type="text" name="firstname" class="form-control" placeholder="First Name">
+											</div>
+											<div class="form-group">
+												<label><i class="fa fa-user" aria-hidden="true"></i> Last Name *</label>
+												<input type="text" name="lastname" class="form-control" placeholder="Last Name">
+											</div>
+											<div class="form-group">
+												<label><i class="fa fa-phone" aria-hidden="true"></i> Phone *</label>
+												<input type="number" name="phone" class="form-control" placeholder="###-###-####">
+											</div>
+											<div class="form-group">
+												<label><i class="fa fa-envelope" aria-hidden="true"></i> Email *</label>
+												<input type="text" name="email" class="form-control" placeholder="Enter Email">
+											</div>
+											<div class="form-group">
+												<label><i class="fa fa-house" aria-hidden="true"></i> Street Address</label>
+												<input type="text" name="street" class="form-control" placeholder="Street Address">
+											</div>
+											<div class="form-group">
+												<label><i class="fa fa-city" aria-hidden="true"></i> City</label>
+												<input type="text" name="city" class="form-control" placeholder="City">
+											</div>
+											<div class="form-group">
+												<label><i class="fa fa-city" aria-hidden="true"></i> State</label>
+												<input type="text" name="state" class="form-control" placeholder="State">
+											</div>
+											<div class="form-group">
+												<label><i class="fa fa-city" aria-hidden="true"></i> Zip</label>
+												<input type="text" name="zip" class="form-control" placeholder="#####">
+											</div>
+											<div class="form-group">
+												<button class="btn btn-raised btn-block btn-danger">Continue →</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<!-- Form Ended -->
+			</div>
+				<!-- DONATION -->
+				<div class="donation pop" id="donation">
+					<!-- GoFundMe Widget -->
+					<div class="gfm-embed" data-url="https://www.gofundme.com/f/help-us-make-our-food-truck-dream-a-reality/widget/medium/"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+					<!-- End GoFundMe Widget -->
+					<!-- PayPal Widget -->
+					<form action="https://www.paypal.com/donate" method="post" target="_top">
+						<input type="hidden" name="hosted_button_id" value="UNWVCFDYLHG9S" />
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+						<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+					</form>
+					<!-- End PayPal Widget -->
+				</div>
+
+				<!-- LOAN -->
+				<div class="loan pop" id="loan">
+					<div class="#">
+						<p>Amount to loan: $<span class="loanamount"></span></p>
+						<div class="slider"></div>
+					</div>
+					<!-- PayPal Widget -->
+					<div id="smart-button-container">
+						<div style="text-align: center;">
+							<div id="paypal-button-container">
+								<div class="USD">Loan $<span class="dollaramount"></span></div>
+							</div>
+						</div>
+					</div>
+					<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+					<!-- End PayPal Widget -->
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+	<!-- FOOTER -->
+	<!-- <footer><a href="#top">Back To Top &#9650;</a></footer> -->
+
+</body>
+
+</html>

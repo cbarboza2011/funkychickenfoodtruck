@@ -1,0 +1,367 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.flex {
+	display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+	flex-direction: row;
+}
+.flex-column {
+  display: flex;
+	flex-direction: column;
+}
+
+/* BODY */
+body {
+  background: rgb(252, 238,33);
+  font-family: kon-tiki-aloha-jf, sans-serif;
+  font-size: 4vh;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(51,51,51);
+}
+body > div {
+  width: 100vw;
+}
+
+/* UNDER CONSTRUCTION */
+.construction {
+  width: 100%;
+  text-align: center;
+  padding: 1vh;
+	border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+	border-image: 16 repeating-linear-gradient(45deg, rgb(51,51,51) 0, rgb(51,51,51) 1em, transparent 0, transparent 2em);
+}
+
+/* GLOBAL STYLES */
+h1 {
+  font-size: 8vh;
+  text-align: center;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 8vw;
+}
+h1, h2 {
+  padding: 2vw;
+}
+p {
+  font-size: 3vh;
+  font-weight: 400;
+  font-style: normal;
+  text-indent: 3vh;
+  padding: 2vh;
+  letter-spacing: 1px;
+  line-height: 4vh;
+}
+p > a {
+  font-family: kon-tiki-aloha-jf, sans-serif;
+}
+
+p, form > div > label, textarea, .information, .form-group button {
+  font-family: canada-type-gibson, sans-serif;
+}
+
+/* BANNER */
+#circle-banner {
+  display: none!important;
+}
+#circle-horizontal {
+  display: block!important;
+}
+
+/* NAVIGATION */
+.nav-container {
+  margin: 2vh;
+  background: rgb(51,51,51);
+  color: rgb(252, 238,33);
+}
+.navigation {
+  display: none;
+}
+.navigation a {
+  padding: 0 2vh 2vh;
+}
+.navcontrol {
+  padding: 2vh;
+}
+
+/* TRUCK PICTURE */
+.truck {
+  width: 90vw;
+}
+.truck img {
+  width: 100%;
+}
+
+/* MENU */
+.menu img {
+  margin: 2vh;
+}
+#desktop-menu, #full-menu {
+  display: none;
+}
+
+/* GALLERY */
+.gallery-image {
+  width: 90vw;
+  margin: 2vh 0 3vh;
+}
+.gallery-image img {
+  width: 100%;
+}
+.caption {
+  padding: 1vh 2vh;
+  border-bottom: 1px solid rgb(51,51,51);
+}
+
+/* STORY */
+.story-image img {
+  width: 90vw;
+}
+.story h1 {
+  padding-bottom: 2vh;
+}
+
+/* FUNDRAISING */
+.finance {
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.finance-button {
+  background: #333;
+  color: rgb(252, 238,33);
+  margin: 2vw;
+  padding: 4vw 2vw;
+  border-radius: 2vw;
+  text-align: center;
+  font-size: 15vw;
+}
+
+.finance-button p {
+  text-indent: 0;
+  font-size: 7vw;
+  padding: 1vw;
+}
+
+.blurb {
+  position: relative;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fcee21;
+}
+
+.pop {
+  margin-left: 100vw;
+}
+
+.windows > div {
+  /* position: absolute; */
+  width: 100%;
+  padding: 0 10%;
+}
+
+/* Information Form */
+.information > div:first-child {
+  padding-bottom: 3vw;
+  font-size: 6vw;
+  text-align: center;
+  font-style: italic;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4vw;
+}
+
+.form-group label, .form-group button {
+  font-size: 6vw;
+}
+
+.form-group input {
+  font-size: 4.5vw;
+}
+
+.form-group input, .form-group button {
+  padding: 4vw 4vw 3vw;;
+  border-radius: 10vw;
+}
+/* FOOTER */
+footer {
+  padding: 2vh;
+}
+
+
+
+/* .................................................. */
+/* LANDSCAPE MODE/TABLET STYLING */
+@media (orientation: landscape) {
+
+  body > div {
+    max-width: 70vw;
+  }
+
+  /* BANNER */
+  #circle-horizontal {
+    display: none!important;
+  }
+  #circle-banner {
+    display: block!important;
+  }
+
+  /* MENU */
+  #mobile-menu {
+    display: none;
+  }
+  #desktop-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .left, .right {
+    width: 48%;
+  }
+  #desktop-menu div img {
+    padding-bottom: 5vh;
+  }
+
+  /* GALLERY */
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+  }
+  .gallery-image {
+    width: 48%;
+    padding: 2vh;
+  }
+  .caption {
+    border: 0;
+    background: rgba(255,255,255,0.5);
+  }
+
+  /* STORY */
+  .story-image img {
+    width: 100%;
+  }
+
+  /* FUNDRAISING */
+  .finance {
+    flex-direction: row;
+  }
+  .finance-button {
+    width: inherit;
+  }
+  .finance-button a {
+    font-size: 7vw;
+  }
+  .finance-button p {
+    font-size: 3vw;
+  }
+}
+
+/* TABLET LANDSCAPE */
+@media (orientation: landscape) and (min-width: 800px) {
+    /* NAVIGATION */
+    .nav-container {
+      max-width: 90vw;
+    }
+}
+
+/* DESKTOP STYLING */
+@media screen and (min-width: 800px) {
+  /* NAVIGATION */
+  .nav-container {
+    width: 70vw;
+  }
+  .navcontrol {
+    display: none!important;
+  }
+  .navigation {
+    display: block!important;
+  }
+  .nav-links, div.social {
+    display: flex;
+    align-items: center;
+  }
+  .navigation div {
+    flex-direction: row;
+  }
+  .navigation a {
+    padding: 2vh;
+  }
+  .links, .pagination {
+    flex-grow: 1;
+  }
+
+  /* TRUCK IMAGE */
+  .truck {
+    width: 50%;
+  }
+
+  /* MENU */
+  .menu {
+    max-width: 90vw;
+  }
+  #desktop-menu {
+    display: none;
+  }
+  #full-menu {
+    display: block;
+    padding-bottom: 10vh;
+  }
+
+  /* STORY */
+  .story-image {
+    width: 40%;
+    float: left;
+    margin: 2vh;
+  }
+  .float-right {
+    float: right;
+  }
+
+  /* FUNDRAISING */
+  .finance-button {
+    padding: 2vw 1vw;
+  }
+  .finance-button a {
+    font-size: 4vw;
+  }
+  .finance-button p {
+    font-size: 2vw;
+    padding: 0;
+  }
+  .ui-slider-handle {
+    top: -.45em!important;
+  }
+
+
+  /* INVEST */
+}
