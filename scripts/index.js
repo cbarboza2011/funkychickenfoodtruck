@@ -16,7 +16,7 @@ $(document).ready(function() {
   }
 
   // Financing Steps
-  // $('.popup').hide();//hide the popup window on page load
+  $('.popup').hide();//hide the popup window on page load
   $('.finance-button').on('click', function() { // after clickin donate or loan buttons, pull up information form to collect data
     $buttonId = $(this).attr('id');
     if ($buttonId == 'donatebutton') {
@@ -38,8 +38,8 @@ $(document).ready(function() {
 
   // Loan Functions
   $('.slider').slider({
-    max: 38100,
-    min: 400,
+    max: 38000,
+    min: 500,
     step: 100,
     value: 500,
   });
@@ -59,7 +59,7 @@ $(document).ready(function() {
   $(".slider").on( "slidestop", function() {
     var $amount = $('.loanamount').text();
     $( ".slider" ).slider( "option", "value", $amount );
-    $('.paypalbutton').attr('amount', $amount);
+    $('a.paypalbutton').attr('href', 'https://www.paypal.com/donate?hosted_button_id=LR2YL2LXSYSTQ&amount=' + $amount);
   });
 
   $('button.submitloan').on('click', function() {

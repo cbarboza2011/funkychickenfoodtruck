@@ -40,6 +40,7 @@ body {
 }
 body > div {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 /* UNDER CONSTRUCTION */
@@ -170,7 +171,7 @@ p, form > div > label, textarea, .information, .form-group button {
 }
 
 .popup {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -178,13 +179,18 @@ p, form > div > label, textarea, .information, .form-group button {
 }
 
 .popup, .pop {
-  /* margin-left: 100vw; */
+  margin-left: 100vw;
 }
 
 .windows > div {
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
   padding: 0 10%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Information Form */
@@ -214,9 +220,25 @@ p, form > div > label, textarea, .information, .form-group button {
   border-radius: 10vw;
 }
 
+/* Donation Window */
+.donation > * {
+  margin: 2vw;
+}
+
+.donation form {
+  width: 90%;
+  background: white;
+  padding: 5vw 5vw 0;
+}
+
+.donation form input:nth-child(2) {
+  width: 100%;
+}
+
 /* SLIDER */
 .slider.ui-slider {
-  width: 100%;
+  width: 80vw;
+  margin: 5vw;
 }
 
 /* FOOTER */
